@@ -24,4 +24,4 @@ Route::get('/addDay', [MainController::class, 'actionViewAddDay']) -> name("addD
 
 Route::post('/addDay', [MainController::class, 'actionAddDay']);
 
-Route::post('deleteDay', [MainController::class, 'actionDeleteDay']);
+Route::post('/deleteDay-{id}', [MainController::class, 'actionDeleteDay']);

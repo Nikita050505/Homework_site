@@ -18,7 +18,7 @@ class MainController
     function actionDeleteDay($id, Request $request)
     {
         /** @var Day $days */
-        $days= Day::where('id', id)->first();
+        $days= Day::where('id', $id)->first();
         try {
             $days->delete();
         } catch (\Exception $e) {

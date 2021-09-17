@@ -33,6 +33,14 @@
     </div>
 
     <div class="container my-4">
+        <form action="/deleteDay-{{ $days->id }}" method="post">
+            @csrf
+
+            <button class="btn bg-secondary-user" type="submit">Удалить</button>
+        </form>
+    </div>
+
+    <div class="container my-4">
         <form action="/redactDay-{{ $days->id }}" method="post">
             @csrf
 
